@@ -1,0 +1,332 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toolbox Meeting Digital</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jsPDF -->
+  <script src="jspdf.umd.min.js"></script>
+
+  <!-- PDF JS -->
+  <script src="pdf.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="form-section">
+    <div class="form-group ">
+      <label>Rencana kerja hari ini</label>
+      <textarea id="rencanaKerja"></textarea>
+
+    </div>
+    
+    <div class="row">
+
+      <div class="form-group">
+        <label>Tanggal</label>
+        <input type="date" id="tanggal">
+      </div>
+
+      <div class="waktu-group">
+        <label>Waktu</label>
+
+        <div class="time-range">
+            <input type="time" id="waktuMulai">
+            <span>s/d</span>
+            <input type="time" id="waktuSelesai">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <label>Metode Kerja/IK yang dibahas</label>
+      <textarea id="metodekerja"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>JSA yang Dibacakan</label>
+      <textarea id="jsa">
+      </textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Izin Kerja yang Berlaku</label>
+
+      <div class="check-grid">
+
+        <label class="check-item">
+          <input 
+            type="checkbox"
+            value="Kerja Umum"
+            class="izinkerja"
+            id="kerjaUmum"
+          >
+          Kerja Umum
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kerja Panas"
+            class="izinkerja"
+            id="kerjaPanas"
+          >
+          Kerja Panas
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kerja Radiografi"
+            class="izinkerja"
+            id="kerjaRadiografi"
+          >
+          Kerja Radiografi
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kerja Penggalian"
+            class="izinkerja"
+            id="kerjaPenggalian"
+          >
+          Kerja Penggalian
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kerja Sandblasting"
+            class="izinkerja"
+            id="kerjaSandblasting"
+          >
+          Kerja Sandblasting
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kerja Pengangkatan"
+            class="izinkerja"
+            id="kerjaPengangkatan"
+          >
+          Kerja Pengangkatan
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kerja Listrik Berenergi"
+            class="izinkerja"
+            id="kerjaListrikBerenergi"
+          >
+          Kerja Listrik Berenergi
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kerja memasuki ruang terbatas"
+            class="izinkerja"
+            id="kerjaMemasukiRuangTerbatas"
+          >
+          Kerja memasuki ruang terbatas
+        </label>
+        
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kerja di ketinggian"
+            class="izinkerja"
+            id="kerjaDiKetinggian"
+          >
+          Kerja di ketinggian
+        </label>
+
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Alat Berat dan Alat Bertenaga Listrik yang Digunakan</label>
+      <textarea id="alat"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Penjelasan Lain</label>
+      <textarea id="penjelasan"></textarea>
+    </div>
+
+   <div class="form-group">
+      <label>APD yang dipakai</label>
+
+      <div class="check-grid">
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Helm"
+            class="APDyangdipakai"
+            id="APDHelm"
+          >
+          Helm
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Sepatu Safety"
+            class="APDyangdipakai"
+            id="APDSepatuSafety"
+          >
+          Sepatu Safety
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Rompi"
+            class="APDyangdipakai"
+            id="APDRompi"
+          >
+          Rompi
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Kacamata"
+            class="APDyangdipakai"
+            id="APDKacamata"
+          >
+          Kacamata
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Sarung Tangan"
+            class="APDyangdipakai"
+            id="APDSarungTangan"
+          >
+          Sarung Tangan
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Penutup Telinga"
+            class="APDyangdipakai"
+            id="APDPenutupTelinga"
+          >
+          Penutup Telinga
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Masker"
+            class="APDyangdipakai"
+            id="APDMasker"
+          >
+          Masker
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Body Harness"
+            class="APDyangdipakai"
+            id="APDBodyHarness"
+          >
+          Body Harness
+        </label>
+
+        <label class="check-item">
+          <input
+            type="checkbox"
+            value="Topeng Las"
+            class="APDyangdipakai"
+            id="APDTopengLas"
+          >
+          Topeng Las
+        </label>
+
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Persyaratan APD Tambahan</label>
+      <textarea id="APDtambahan"></textarea>
+    </div>
+
+    <div class="person-section">
+
+      <h3>Pekerja</h3>
+
+      <button onclick="openFaceID('worker')">
+        Tambah Pekerja
+      </button>
+
+      <table id="workerTable">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Jabatan</th>
+            <th class="faceid-col">Face ID</th>
+            <th class="aksi-col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+    </div>
+
+    <div class="person-section">
+
+      <h3>Petugas Pengawas</h3>
+
+      <button onclick="openFaceID('supervisor')">
+        Tambah Petugas
+      </button>
+
+      <table id="supervisorTable">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Jabatan</th>
+            <th class="faceid-col">Face ID</th>
+            <th class="aksi-col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+    </div>
+
+    <div class="button-grup">
+      <button class="pdf-button" onclick="previewPDF()">
+        VIEW PDF
+      </button>
+      <button class="submit-button" onclick="submitForm()">
+        SUBMIT
+      </button>
+    </div>
+
+  </div>
+
+  <div class="preview-section">
+
+    <canvas id="pdfCanvas"></canvas>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

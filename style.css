@@ -1,0 +1,283 @@
+body{
+}
+
+textarea{
+  height:90px;
+}
+
+.row{
+  display:flex;
+  gap:10px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.form-group textarea{
+  width:95%;
+  height:60px;
+}
+
+.time-range{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.time-range input{
+  width:140px;
+}
+
+.check-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.check-grid label{
+  font-weight:normal;
+}
+
+.apd-table,
+#workerTable,
+#supervisorTable{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.apd-table td,
+.apd-table th,
+#workerTable td,
+#workerTable th,
+#supervisorTable td,
+#supervisorTable th{
+  border:1px solid #ccc;
+  padding:8px;
+}
+
+.faceid-col{
+  width:60px;
+  text-align:center;
+}
+
+.aksi-col{
+  width:70px;
+  text-align:center;
+}
+
+.faceid-status{
+  text-align:center;
+  font-weight:bold;
+  color:green;
+}
+
+table button{
+
+  background:red;
+  color:white;
+  border:none;
+  padding:5px 10px;
+  border-radius:5px;
+  cursor:pointer;
+
+}
+
+button{
+  padding:12px;
+  background:#0b57d0;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.pdf-button{
+  width:100%;
+  margin-top:20px;
+}
+
+#pdfCanvas{
+  width:100%;
+}
+
+.camera-box{
+
+  position:relative;
+
+  width:100%;
+
+  max-width:500px;
+
+  margin:auto;
+
+}
+
+#video{
+
+  width:100%;
+
+  border-radius:10px;
+
+}
+
+#overlay{
+
+  position:absolute;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  pointer-events:none;
+
+}
+
+#switchCameraBtn{
+
+  margin-top:15px;
+
+  width:200px;
+
+  font-size:16px;
+
+}
+
+.button-group{
+
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+
+}
+
+.button-group button{
+
+  flex:1;
+
+}
+
+.submit-button{
+
+  background:#1b5e20;
+
+}
+
+textarea{
+
+  width:100%;
+
+  padding:5px;
+
+  margin:0;
+
+  text-indent:0;
+
+  text-align:left;
+
+  box-sizing:border-box;
+
+}
+
+
+html,
+body{
+
+  margin:0;
+  padding:0;
+
+  width:100%;
+  overflow-x:hidden;
+
+}
+
+.container{
+
+  width:100%;
+  max-width:100%;
+
+  padding:10px;
+
+  box-sizing:border-box;
+
+}
+
+input,
+textarea,
+button,
+select{
+
+  width:100%;
+
+  box-sizing:border-box;
+
+  font-size:16px;
+
+}
+
+video{
+
+  width:100%;
+  height:auto;
+
+}
+
+table{
+
+  width:100%;
+
+  display:block;
+
+  overflow-x:auto;
+
+}
+
+textarea{
+
+  width:100%;
+
+  box-sizing:border-box;
+
+}
+
+.waktu-group{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+}
+
+.waktu-group input{
+
+  width:110px;
+
+}
+
+.check-item{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  margin-bottom:10px;
+
+  font-size:18px;
+
+}
+
+.check-item input{
+
+  width:20px;
+  height:20px;
+
+}
